@@ -25,5 +25,8 @@
   },
   "Partners": {
     "title": "We've More Than +254 Global Partners:"
+  },
+  "Loader": {
+    "loading": "Loading..."
   }
 }

@@ -26,7 +26,7 @@ export const Hero = () => {
   });
 
   // Smoothly move the earth down as the user scrolls
-  const earthY = useTransform(scrollYProgress, [0, 1], [0, 340]);
+  const earthY = useTransform(scrollYProgress, [0, 1], [0, 360]);
 
   // Trigger overlay only after earth entrance animation finishes (delay 0.2 + duration 0.8 = 1s)
   useEffect(() => {
@@ -46,7 +46,7 @@ export const Hero = () => {
   }, [overlayReady]);
 
   return (
-    <section ref={sectionRef} className="relative w-full min-h-screen pt-28 pb-39 mb-30 flex items-center">
+    <section ref={sectionRef} className="relative w-full min-h-screen pt-28 pb-20 mb-35 flex items-center">
 
       <motion.div
         key={`planet-${locale}`}
@@ -56,32 +56,32 @@ export const Hero = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         className="absolute z-20 pointer-events-none hidden lg:block"
         style={{
-          top: '-140px',
-          width: '520px',
-          height: '520px',
-          ...(isRtl ? { left: '-200px', right: 'auto' } : { right: '-160px', left: 'auto' }),
+          top: '-160px',
+          width: '530px',
+          height: '530px',
+          ...(isRtl ? { left: '-240px', right: 'auto' } : { right: '-240px', left: 'auto' }),
         }}
       >
         <Image
           src="/images/orange-planet.webp"
           alt="Orange Planet"
           fill
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain opacity-80"
           priority
         />
       </motion.div>
 
-      <div className="w-full max-w-7xl mx-auto px-6 lg:px-16 flex flex-col lg:flex-row gap-12 items-center justify-between relative z-10">
+      <div className="w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-12 items-center justify-between relative z-10">
 
         {/* Mobile glowing center logo background */}
-        <div className="absolute inset-0 flex items-center justify-center z-0 lg:hidden opacity-50 pointer-events-none select-none">
-          <div className="relative w-[340px] h-[340px] rounded-full bg-blue-600/10 shadow-[0_0_120px_rgba(37,99,235,0.4)] flex items-center justify-center">
+        <div className="absolute inset-0 flex items-center justify-center opacity-65 z-2 lg:hidden pointer-events-none select-none">
+          <div className="relative w-[340px] h-[340px] rounded-full shadow-[0_0_120px_rgba(37,99,235,0.4)] flex items-center justify-center">
             <Image 
               src="/images/logo.svg" 
               alt="Serv5 Mobile Backdrop Logo" 
               width={200} 
               height={200} 
-              className="object-contain"
+              className="object-contain animate-pulse"
             />
           </div>
         </div>
@@ -129,16 +129,15 @@ export const Hero = () => {
           style={{ y: earthY }}
         >
           <div
-            className="absolute rounded-full overflow-hidden shadow-[0_0_80px_rgba(0,20,80,0.8)]"
+            className="absolute top-15 rounded-full overflow-hidden shadow-[0_0_80px_rgba(0,20,80,0.8)]"
             style={{
-              width: 'clamp(300px, 78%, 490px)',
+              width: 'clamp(310px, 79%, 510px)',
               aspectRatio: '1 / 1',
               bottom: '0',
               left: '50%',
               transform: 'translateX(-50%)',
             }}
           >
-            {/* Layer 1: دوران الأرض */}
             <div className="absolute inset-0 animate-[spin_80s_linear_infinite]">
               <Image
                 src="/images/earth.png"
@@ -150,9 +149,27 @@ export const Hero = () => {
             </div>
 
             <div className="absolute inset-0 flex items-center justify-center z-20">
-              <div
+              <motion.div
+                animate={{
+                  y: [0, -10, 0],
+                  opacity: [0.35, 1, 0.35]
+                }}
+                transition={{
+                  y: {
+                    duration: 4,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                    ease: "easeInOut"
+                  },
+                  opacity: {
+                    duration: 3,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                    ease: "easeInOut"
+                  }
+                }}
                 className="relative"
-                style={{ width: '55%', aspectRatio: '1 / 1', opacity: 0.55 }}
+                style={{ width: '55%', aspectRatio: '1 / 1' }}
               >
                 <Image
                   src="/images/logo.svg"
@@ -160,7 +177,7 @@ export const Hero = () => {
                   fill
                   className="object-contain"
                 />
-              </div>
+              </motion.div>
             </div>
 
             <motion.div

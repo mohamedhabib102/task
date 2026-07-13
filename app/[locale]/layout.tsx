@@ -3,6 +3,7 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import type { Metadata } from 'next';
+import { PageLoader } from '@/components/ui/PageLoader';
 import '../globals.css';
 
 const seoData: Record<string, { title: string; description: string; locale: string }> = {
@@ -125,7 +126,7 @@ export default async function LocaleLayout({
       </head>
       <body className="font-sans antialiased text-white min-h-screen relative overflow-x-hidden" style={styles}>
         {/* Background Overlay */}
-        <div className="fixed inset-0 z-[-2] bg-[#0c1445]/80" style={{
+        <div className="fixed inset-0 z-[-2] bg-[#0c1445]/70" style={{
           backgroundImage: "url('/images/bg-body.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -133,6 +134,7 @@ export default async function LocaleLayout({
         }}></div>
 
         <NextIntlClientProvider messages={messages}>
+          <PageLoader />
           {children}
         </NextIntlClientProvider>
       </body>

@@ -70,8 +70,8 @@ export const Navbar = () => {
             <a
               key={index}
               href={link.href}
-              className={`text-[12px] font-semibold transition-colors whitespace-nowrap flex items-center gap-1 ${
-                index === 0 ? 'text-[#ff7b00] border-b-2 border-[#ff7b00] pb-1' : 'text-gray-300 hover:text-white'
+              className={`text-[12px] font-semibold transition-all duration-300 whitespace-nowrap flex items-center gap-1 border-b-2 pb-1 hover:text-[#ff7b00] hover:border-[#ff7b00] ${
+                index === 0 ? 'text-[#ff7b00] border-[#ff7b00]' : 'text-gray-300 border-transparent'
               }`}
             >
               <span>{link.name}</span>

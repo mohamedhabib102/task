@@ -9,7 +9,7 @@ export const routing = defineRouting({
   defaultLocale: 'ar',
   
   // Set locale prefix for URL
-  localePrefix: 'as-needed' // We could use 'always' but 'as-needed' is cleaner if we want domain/ for arabic and domain/en for english. However, standard is 'always' or 'as-needed'.
+  localePrefix: 'always'
 });
  
 // Lightweight wrappers around Next.js' navigation APIs
