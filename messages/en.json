@@ -1,0 +1,29 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "products": "Products",
+    "contact": "Contact Us",
+    "lang": "العربية"
+  },
+  "Hero": {
+    "title": "Serv5\nWe Innovate Solutions... That Make a Difference",
+    "description": "From websites and digital stores to apps, marketing, and AI. We provide everything your project needs to launch with confidence in the digital world.",
+    "orderPricing": "Order Pricing",
+    "watchMore": "Watch More"
+  },
+  "Video": {
+    "comingSoon": "Video unavailable right now..."
+  },
+  "About": {
+    "subtitle": "About Us",
+    "title": "Experience Spanning More Than 15 Years",
+    "description": "Since our launch, we have worked with hundreds of companies and entrepreneurs to help them build a strong digital presence and achieve their business goals. We rely on a specialized team that combines creativity and technical expertise to deliver integrated solutions including website design, store development, app programming, digital marketing, search engine optimization, and artificial intelligence, with a focus on quality and measurable results."
+  },
+  "Partners": {
+    "title": "We've More Than +254 Global Partners:"
+  }
+}
