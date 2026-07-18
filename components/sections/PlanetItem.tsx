@@ -78,15 +78,16 @@ export const PlanetItem = ({
       }}
       style={{
         position: 'absolute',
-        // Always position exactly at the slot coordinates to maintain proper alignment
-        left: `${targetPos.x}%`,
-        top: `${targetPos.y}%`,
-        width: renderSize,
-        height: renderSize,
         zIndex: isCurrentActive ? 30 : 10,
         x,
         y,
         opacity,
+      }}
+      animate={{
+        left: `${targetPos.x}%`,
+        top: `${targetPos.y}%`,
+        width: renderSize,
+        height: renderSize,
       }}
       className="flex items-center justify-center"
     >
