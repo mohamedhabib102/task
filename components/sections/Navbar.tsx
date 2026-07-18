@@ -84,7 +84,7 @@ export const Navbar = () => {
         <div className="hidden lg:flex items-center">
           <button
             onClick={toggleLanguage}
-            className="flex items-center justify-center gap-2 space-x-2 space-x-reverse text-sm border border-white/20 rounded-full px-3 py-1.5 hover:bg-white/10 transition-colors"
+            className="cursor-pointer flex items-center justify-center gap-2 space-x-2 space-x-reverse text-sm border border-white/20 rounded-full px-3 py-1.5 hover:bg-white/10 transition-colors"
           >
             <Globe className="w-4 h-4" />
             <span>{t('lang')}</span>
@@ -96,7 +96,7 @@ export const Navbar = () => {
           {/* Language Toggle next to menu on mobile */}
           <button
             onClick={toggleLanguage}
-            className="flex items-center space-x-2 space-x-reverse gap-2 text-sm border border-white/20 rounded-full px-3 py-1 hover:bg-white/10 transition-colors"
+            className="cursor-pointer flex items-center space-x-2 space-x-reverse gap-2 text-sm border border-white/20 rounded-full px-3 py-1 hover:bg-white/10 transition-colors"
           >
             <Globe className="w-4 h-4" />
             <span>{t('lang')}</span>

@@ -225,7 +225,7 @@ export const Hero = () => {
             }}
           >
             <Image
-              src="/images/man.png"
+              src="/images/man.webp"
               alt="Astronaut"
               fill
               className="object-contain drop-shadow-2xl"

@@ -2,6 +2,7 @@ import { Navbar } from '@/components/sections/Navbar';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
 import { Partners } from '@/components/sections/Partners';
+import { Services } from '@/components/sections/Services';
 import { StarsBackground } from '@/components/StarsBackground';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <About />
       <Partners />
+      <Services />
     </main>
   );
 }

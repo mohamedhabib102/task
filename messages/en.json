@@ -23,6 +23,29 @@
     "title": "Experience Spanning More Than 15 Years",
     "description": "Since our launch, we have worked with hundreds of companies and entrepreneurs to help them build a strong digital presence and achieve their business goals. We rely on a specialized team that combines creativity and technical expertise to deliver integrated solutions including website design, store development, app programming, digital marketing, search engine optimization, and artificial intelligence, with a focus on quality and measurable results."
   },
+  "Services": {
+    "subtitle": "WHAT WE DO",
+    "title": "Our Services",
+    "hint": "Click on any planet to discover the service — each world holds a story.",
+    "knowMore": "Know More",
+    "ourServices": "Our Services",
+    "exploreService": "Explore This Service",
+    "webHosting": "Web Hosting",
+    "webHostingTitle": "Powerful Web Hosting",
+    "webHostingDesc": "With us, you will get the most powerful website hosting that provides you with many advantages and helps you maintain the security of your site and keep it away from piracy.",
+    "digitalMarketing": "Digital Marketing",
+    "digitalMarketingTitle": "Digital Marketing & Growth",
+    "digitalMarketingDesc": "We craft data-driven digital marketing campaigns that elevate your brand visibility, generate qualified leads, and maximize your return on investment across all channels.",
+    "webDesign": "Web Design",
+    "webDesignTitle": "Creative Web Design",
+    "webDesignDesc": "We design visually stunning, user-centered websites that communicate your brand story and convert visitors into loyal customers through intuitive UI/UX experiences.",
+    "appDev": "App Development",
+    "appDevTitle": "Mobile & Web App Development",
+    "appDevDesc": "From concept to deployment, our expert developers build high-performance mobile and web applications that scale with your business and delight your users.",
+    "seo": "SEO",
+    "seoTitle": "Search Engine Optimization",
+    "seoDesc": "Dominate search rankings with our advanced SEO strategies. We optimize every aspect of your digital presence to attract organic traffic and outperform your competition."
+  },
   "Partners": {
     "title": "We've More Than +254 Global Partners:"
   },
